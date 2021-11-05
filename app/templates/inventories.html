@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Manage Inventories</h2>
+<form method="POST">
+    <h4>Buns</h4>
+    <label>Sesame</label><input name="bun:sesame" value="{{inven.bunInventory.getQuantity('sesame')}}"><br/>
+    <label>Muffin</label><input name="bun:muffin" value="{{inven.bunInventory.getQuantity('muffin')}}"><br/>
+    <h4>Patties</h4>
+    <label>Chicken</label><input name="patty:chicken" value="{{inven.pattyInventory.getQuantity('chicken')}}"><br/>
+    <label>Vegetarian</label><input name="patty:vegetarian" value="{{inven.pattyInventory.getQuantity('vegetarian')}}"><br/>
+    <label>Beef</label><input name="patty:beef" value="{{inven.pattyInventory.getQuantity('beef')}}"><br/>
+    <h4>Ingredients</h4>
+    <label>Tomato</label><input name="ingredient:tomato" value="{{inven.ingredientInventory.getQuantity('tomato')}}"><br/>
+    <label>Lettuce</label><input name="ingredient:lettuce" value="{{inven.ingredientInventory.getQuantity('lettuce')}}"><br/>
+    <label>Tomato Sauce</label><input name="ingredient:tomato_sauce" value="{{inven.ingredientInventory.getQuantity('tomato sauce')}}"><br/>
+    <label>Cheddar Cheese</label><input name="ingredient:cheddar_cheese" value="{{inven.ingredientInventory.getQuantity('cheddar cheese')}}"><br/>
+    <h3>Sides</h3>
+    <label>Fries</label><input name="side:fries" value="{{inven.sideInventory.getQuantity('fries')}}"><br/>
+    <label>Nugget</label><input name="side:nugget" value="{{inven.sideInventory.getQuantity('nugget')}}"><br/>
+    <h3>Drinks</h3>
+    <label>Cola</label><input name="drink:cola" value="{{inven.drinkInventory.getQuantity('cola')}}"><br/>
+    <label>Sprite</label><input name="drink:sprite" value="{{inven.drinkInventory.getQuantity('sprite')}}"><br/>
+
+    <button type="submit">Update</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>GRW Gourmet Ordering</title>
+	<!--Need to make external linking to stylesheet once in main folder
+	<link rel="stylesheet"
+	type="text/css"
+	href="style.css">--->
+	
+	<style type="text/css">
+
+		/* Layout */
+		body {
+			min-width: 630px;
+		}
+
+		#container {
+			padding-left: 200px;
+			padding-right: 200px;
+		}
+		
+		#container .column {
+			position: relative;
+			float: left;
+		}
+		
+		#center {
+			padding: 10px 20px;
+			width: 100%;
+		}
+		
+		#header {
+			padding: 0.3em;
+		}
+
+		#left {
+			width: 180px;
+			padding: 0 10px;
+			right: 240px;
+			margin-left: -100%;
+		}
+				
+		/* Make columns same height as each other */
+		#container {
+			overflow: hidden;
+		}
+
+		#container .column {
+			padding-bottom: 1000em;
+			margin-bottom: -1000em;
+		}
+
+		/* Aesthetics */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: "Arial", sans-serif;
+			line-height: 1.5em;
+		}
+		
+		p {
+			color: #555555;
+		}
+		
+		h1, h2 {
+			color: darkgreen;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav ul a {
+			color: darkgreen;
+			text-decoration: none;
+		}
+
+		#header {
+			background: #BCCE98;
+		}
+
+		#left {
+			background: #DAE9BC;
+		}
+		
+		#center {
+			background: #FFFFFF;
+		}
+		
+		#container .column {
+			padding-top: 1em;
+		}
+
+	</style>	
+</head>
+
+<body>
+
+	<header id="header"><h1>GRW Gourmet</h1></header>
+
+	<div id="container">
+
+		<main id="center" class="column">
+			<div>
+			
+				<h2>Heading</h2>
+				<p>Main space for central text</p>
+				<p>Main space for central text</p>
+				<p>Main space for central text</p>
+				<p>Main space for central text</p>
+				<p>Main space for central text</p>
+				<p>Main space for central text</p>
+				<p>Main space for central text</p>
+			</div>								
+		</main>
+
+		<nav id="left" class="column">
+			<ul>
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+				<li><a href="#">Link 4</a></li>
+				<li><a href="#">Link 5</a></li>
+			</ul>		
+		</nav>
+
+	</div>
+</body>
+
+</html>

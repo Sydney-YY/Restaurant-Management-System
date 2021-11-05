@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Make your order</h2>
+<form method="POST">
+    <h3>Main</h3>
+
+    <input type="radio" name="maintype" value="burger" checked /> Burger(base price: $1.5)
+    <input type="radio" name="maintype" value="wrap" /> Wrap(base price: $1.0)
+    <h4>Buns</h4>
+    <label>Sesame($0.2)</label><input name="bun:sesame" value="0"><br/>
+    <label>Muffin($0.2)</label><input name="bun:muffin" value="0"><br/>
+    <h4>Patties</h4>
+    <label>Chicken($0.4)</label><input name="patty:chicken" value="0"><br/>
+    <label>Vegetarian($0.3)</label><input name="patty:vegetarian" value="0"><br/>
+    <label>Beef($0.5)</label><input name="patty:beef" value="0"><br/>
+    <h4>Ingredients(you can just select one of them, but the number of them are not limited</h4>
+    <label>Tomato($0.05)</label><input name="ingredient:tomato" value="0"><br/>
+    <label>Lettuce($0.05)</label><input name="ingredient:lettuce" value="0"><br/>
+    <label>Tomato Sauce($0.01)</label><input name="ingredient:tomato_sauce" value="0"><br/>
+    <label>Cheddar Cheese($0.01)</label><input name="ingredient:cheddar_cheese" value="0"><br/>
+    <h3>Sides</h3>
+    <label>Fries small($0.3)</label><input name="side:fries_small" value="0"><br/>
+    <label>Fries medium($0.4)</label><input name="side:fries_medium" value="0"><br/>
+    <label>Fries large($0.5)</label><input name="side:fries_large" value="0"><br/>
+    <label>Nugget small($0.3)</label><input name="side:nugget_small" value="0"><br/>
+    <label>Nugget medium($0.4)</label><input name="side:nugget_medium" value="0"><br/>
+    <label>Nugget large($0.5)</label><input name="side:nugget_large" value="0"><br/>
+    <h3>Drinks</h3>
+    <label>Cola small($0.3)</label><input name="drink:cola_small" value="0"><br/>
+    <label>Cola medium($0.4)</label><input name="drink:cola_medium" value="0"><br/>
+    <label>Cola large($0.5)</label><input name="drink:cola_large" value="0"><br/>
+    <label>Sprite small($0.3)</label><input name="drink:sprite_small" value="0"><br/>
+    <label>Sprite medium($0.4)</label><input name="drink:sprite_medium" value="0"><br/>
+    <label>Sprite large($0.5)</label><input name="drink:sprite_large" value="0"><br/>
+
+    <button type="submit">Submit order</button>
+</form>
+
+{% endblock %}
