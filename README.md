@@ -2,7 +2,7 @@
 
 ### Aims:
 
-The aim of this group project is to enable students to consolidate their knowledge in the fundamental principles of Software Engineering and apply the theoretical concepts to a “hands-on” software engineering problem. The project will enable students to:
+The aim of this  project is to enable students to consolidate their knowledge in the fundamental principles of Software Engineering and apply the theoretical concepts to a “hands-on” software engineering problem. The project will enable students to:
 
 -   Develop problem-solving skills to solve ‘real-world’ software engineering problems; analyse the problem domain, design and develop a solution to the problem
 
